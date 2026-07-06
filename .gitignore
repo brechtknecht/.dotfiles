@@ -1,0 +1,17 @@
+# Dotfiles repo lives in $HOME — ignore everything by default,
+# then whitelist only the files/dirs we actually track.
+# To start tracking something new: add a matching `!` line below.
+
+/*
+
+!/.gitignore
+!/README.md
+!/.zshrc
+!/.oh-my-zsh
+
+# Nested: must re-include each parent dir on the way down.
+!/.config
+/.config/*
+!/.config/ghostty
+/.config/ghostty/*
+!/.config/ghostty/themes
